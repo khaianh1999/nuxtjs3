@@ -24,6 +24,7 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
     "tw-elements": "^1.0.0-beta2"
   }
 }

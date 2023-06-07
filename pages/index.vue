@@ -1,6 +1,8 @@
 <template>
   <NuxtLayout :name="layout">
-    <!-- <HomePageJumbotron /> -->
+    <ClientOnly>
+    <HomePageJumbotron />
+    </ClientOnly>
     <HomePageSlideShow />
     <HomePageFlashSale />
   </NuxtLayout>
