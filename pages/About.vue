@@ -6,5 +6,8 @@
   </NuxtLayout>
 </template>
 <script setup>
+definePageMeta({
+  middleware: ["auth"]
+})
 const layout = "main";
 </script>

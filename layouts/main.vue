@@ -1,9 +1,16 @@
 <template>
   <div>
-    <ClientOnly>
-        <AppHeader />
-    </ClientOnly>
-    <slot />
+    <AppHeader />
+    <div class="flex flex-nowrap gap-6">
+        <div>
+            <ClientOnly>
+            <Sidenav />
+            </ClientOnly>
+        </div>
+        <div class="w-full">
+            <slot />
+        </div>
+    </div>
     <AppFooter />
   </div>
 </template>
