@@ -8,6 +8,12 @@
   <!-- </NuxtLayout> -->
 </template>
 <script setup>
+
+import { onMounted } from "vue";
+const app = useNuxtApp();
+onMounted(() => {
+  console.log("$api: ", app);
+});
 // const layout = "main";
 const foo = useFoo();
 const foo1 = useFoo1();

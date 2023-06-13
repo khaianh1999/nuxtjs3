@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "axios": "^1.4.0",
     "tw-elements": "^1.0.0-beta2"
   }
 }
