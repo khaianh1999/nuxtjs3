@@ -15,5 +15,26 @@ export default (api: AxiosInstance) => {
                 params,
             });
         },
+
+        getListUser(params: any = {}) {
+            return api.get(`/v2/users`, {
+                params,
+            });
+        },
+        getUserDetail(params: any = {}, uId: Number) {
+            return api.get(`/v2/users/${uId}`, {
+                params,
+            });
+        },
+        createUser(params: any = {}) {
+            return api.post('/v2/users', params);
+        },
+        updateUser(params: any = {}, uId: Number) {
+            return api.put(`/v2/users/${uId}`, params);
+        },
+        deleteUser(params: any = {}, uId: Number) {
+            return api.delete(`/v2/users/${uId}`, params);
+        },
+
     }   
 }
